@@ -28,30 +28,3 @@ flowchart LR
     Read --- D4[(Dataset Korpus Kalimat)]
     Kin --- D5[(Dataset Goresan Hanzi)]
     Eval --- D6[(Dataset Log Perilaku)]
-
-
-
-
-
-mandarin-agentic-project/
-├── data/                         # Dataset mentah & bersih (CSV) untuk EDA dan Tools Agent
-├── notebooks_visdat/             # 6 Jupyter Notebook EDA untuk Matkul Visualisasi Data Bisnis
-│   ├── 01_eda_kurikulum_hsk.ipynb
-│   ├── 02_eda_visual_radikal.ipynb
-│   ├── 03_eda_auditory_tones.ipynb
-│   ├── 04_eda_reading_korpus.ipynb
-│   ├── 05_eda_kinesthetic_strokes.ipynb
-│   └── 06_eda_vark_behavior.ipynb
-├── backend/                      # Layanan utama Python (FastAPI + Multi-Agent AI)
-│   ├── main.py                   # Endpoint API utama
-│   ├── database.py               # Manajemen state & penyimpanan SQLite
-│   ├── core/                     # Konfigurasi LLM Client & Skema Pydantic
-│   └── agents/                   # Modul independen untuk 6 cabang Agent
-│       ├── orchestrator/
-│       ├── visual/
-│       ├── auditory/
-│       ├── reading/
-│       ├── kinesthetic/
-│       └── evaluator/
-├── frontend/                     # Antarmuka Web Interaktif
-└── requirements.txt              # Daftar pustaka Python
